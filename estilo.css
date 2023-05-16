@@ -1,0 +1,135 @@
+/* ao iniciar projeto tirar padding,margin, list-style, text-decoration */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: red;
+    font-family:'Roboto Condensed', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-size: 30px;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+body {
+    background-image: url(./pexels-eda-11482477.jpg);
+    background-repeat: no-repeat;
+    background-position: 0,5px;
+    background-size: cover;
+    /*background: url(./pexels-tobias-bjørkli-8230825.jpg) no-repeat center center fixed */
+    /*uigradients.com background: linear-gradient( 90deg, #ee9ca7,#ffdde1, #FF0099); */
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    /*border-bottom: 2px solid #fff; */
+    box-shadow: 1px 1px 10px 1px #fff;
+    /*border-bottom: 15px ridge #fff; */
+    margin-bottom: 45px;
+}
+/* para selecionar apenas primeiro li
+ header ul li :first-child {
+    border-left: 1px dashed #fff;
+ } */
+
+header ul li {
+    padding: 10px;
+    border-bottom: 2px dashed #fff;
+    border-top: 2px dashed #fff;
+    border-right: 2px dashed #fff;
+    border-left: 2px dashed #fff;
+}
+
+header ul li a {
+    transition: 300ms; 
+}
+
+header ul li a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+header ul {
+    display: flex;
+}
+
+.conteiner {
+    text-align: center;
+}
+
+.name{
+    padding: 00px;
+}
+.conteiner .name h1{
+    font-size: 60px
+}
+.conteiner .name h5{
+    font-size: 25px
+}
+
+#sobre p{
+    max-width: 600px;
+    margin: auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    
+}
+
+.form input{
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button{
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient( to right, #c09717 50%, #9c551b 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    /*background-color: blue; */
+    cursor: pointer;
+    color: chartreuse;
+    border: none;
+    font-weight: 600;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+    
+}
+
+@media only screen and (max-width: 480px){
+    .container .name h1 {
+        font-size: 30px
+    }
+}
+
+.container .name h5 {
+    font-size: 15px;
+}
+#about p{
+    max-width: 80%;
+    text-align: justify;
+}
